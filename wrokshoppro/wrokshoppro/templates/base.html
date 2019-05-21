@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BASE FILE</title>
+</head>
+<style>
+    body{
+        background-color: unset;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        background-color:deeppink;
+    }
+    li{
+       float: left;
+
+    }
+
+    li a{
+        display:block ;
+        color: wheat;
+        text-align: center;
+        padding: 15px 20px;
+        text-decoration: none;
+        font: bolder;
+    }
+       .active{
+           background-color: green;
+       }
+    li a:hover{
+        background-color: deepskyblue;
+        color: black;
+
+    }
+    .footer{
+        position: fixed;
+        left: 0;
+        bottom:0 ;
+        width:100% ;
+        background-color:orangered;
+        color:yellow ;
+
+    }
+    #h11{
+        font-size: 50px;
+        text-shadow:3px 3px 3px red ;
+        margin-top: -10px;
+        color:red;
+
+    }
+    p{
+        color:deeppink;
+        font-family: "Comic Sans MS";
+    }
+
+
+</style>
+<body>
+<ul>
+    <li><a href="/home/" class="active">home</a></li>
+    <li><a href="/contact/">contact</a></li>
+    <li><a href="/courses/">courses</a></li>
+    <li><a href="/feedback/">feedback</a></li>
+    <li><a href="/ourteam/">ourteam</a></li>
+    <li><a href="/gallery/">gallery</a></li>
+</ul>
+<center><h1 id="h11">WELCOME TO DURGA SOFT</h1></center>
+{% block content %}
+
+{% endblock %}
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis eum non temporibus tenetur. Accusantium dolorem ipsa labore, praesentium quo ratione sint! Asperiores culpa dolor id itaque natus nihil quidem, quos rem reprehenderit sapiente similique ut. Aliquid aut culpa cum cumque deleniti, eius eligendi eos exercitationem expedita explicabo facilis fuga illum iusto libero minima molestiae mollitia non odio officia quas qui, quisquam ratione, reprehenderit sint veritatis. Assumenda debitis dolor dolores, dolorum excepturi exercitationem, neque non, porro quos saepe velit vero vitae!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis eum non temporibus tenetur. Accusantium dolorem ipsa labore, praesentium quo ratione sint! Asperiores culpa dolor id itaque natus nihil quidem, quos rem reprehenderit sapiente similique ut. Aliquid aut culpa cum cumque deleniti, eius eligendi eos exercitationem expedita explicabo facilis fuga illum iusto libero minima molestiae mollitia non odio officia quas qui, quisquam ratione, reprehenderit sint veritatis. Assumenda debitis dolor dolores, dolorum excepturi exercitationem, neque non, porro quos saepe velit vero vitae!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis eum non temporibus tenetur. Accusantium dolorem ipsa labore, praesentium quo ratione sint! Asperiores culpa dolor id itaque natus nihil quidem, quos rem reprehenderit sapiente similique ut. Aliquid aut culpa cum cumque deleniti, eius eligendi eos exercitationem expedita explicabo facilis fuga illum iusto libero minima molestiae mollitia non odio officia quas qui, quisquam ratione, reprehenderit sint veritatis. Assumenda debitis dolor dolores, dolorum excepturi exercitationem, neque non, porro quos saepe velit vero vitae!</p>
+
+
+
+
+<footer class="footer">
+    <center><h3>THANKU YOU ALL</h3></center>
+</footer>
+
+</body>
+</html>
