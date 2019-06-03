@@ -1,0 +1,85 @@
+
+1.we create a local repository in our machine and we copy the pase in the local repository.
+2.in the git hub.com we create one remote repositry and we move the project from local repos to remoterepository by using git.
+3. in pythonanywhere.com create vitual enivroment and move project from repository to virtual eniviromote "pythonanywhere.com".
+
+
+git:
+===
+1. what is git?
+ans: git is used to control diff versions of same project.
+eg:
+we have complete the project deployment and sent to the github on 2nd june and we have shown the project to the client,he said that requerid some modifications now we have done requried changes and we saved the project finally the project in the git hub also updated  on 5th june now we shown to client ,agin he said required some changes like this he saaid 5 times we updated same project 5 times,after 5 times he said that please take the initaial project and deploy the server, but have only one copy it updated 5 times.
+(we dont have initial project ),here it is very diffcult to get iniitial project.
+
+so slove above problem we use to mantain each update as a copy(veersion),so we control the n number of versions of project sperately by using git.
+
+note:
+we have download and install.
+
+1.create floder name with "localrepository" and copy and paste "regandloginpro"
+2. now we change path to the local repository and we intialse git in the local repository .
+
+pythondjango3pm
+AbCd_1234@python
+
+
+git:
+=====
+1.git init
+2.git add .
+3.git status
+4.git commit -m "first version"
+5. git config --global user.email nagababuthepython@gmail.com
+6. git config --global user.name nagababu
+7. git config --global -l
+8.git remote add origin https://github.com/nagababuthepython/reglogin_repository.git
+9.git push -u origin master
+10.it may error go to "credintial manager'----->"windows creditinals".----> got "general credintials"-----. remove that one
+11. again run "git push -u origin master".
+12.create account--->"pythonanywhere.com"
+13.click on --.>"consoles tab"--->"bash"--->"deployment server"
+
+mobile:
+======
+======
+1.mkvirtualenv -- python=python3.6 regfloder
+2.pip install -U django==1.9
+3.pip list(see list of items  )
+4.copy link -->deployment server(bash console)
+4. git  clone link paste  ---enter
+5. Ls 
+6. "Reglogin_repository "(remote repository ).
+7. When you run git hub link above remote repository then moved from github to deployment server.
+8. Change path to "Reglogin_repository".
+9. Cd Reglogin_repository
+10. Cd Regloginpro
+11.  Makemigrations ,migrate,runserver
+12. Makemigrations (project  created ).
+13. Top right corner  "web"---open new web page open .
+14."add new web page"---->next----->manual configuration-->python3.6.  -- next----configuration----"sourcecode"---pastepwd
+15.pwd command--- copy directory (display present  working  directory  path) 
+16.Create a path for virtual environment  like below
+Home/reganlogin/.virtualpath/regfloder(virtualpath)
+16.virtual env (paste virtual path)
+17 .reload button click on
+18.Open  link new tab 
+19.Display  "hello world"(Reglogin. Pythonanywhere.com)
+20.Now we will remove " hello world" code 
+  Configuration----code---Wsgi-----open new link---remove lines from (13-35).
+  21 .now go Django  title modified code below configure code
+  Import OS
+  Import sys
+  Path="pwd path"
+  If path not in sys .path:
+ .      sys.path.append(path)
+ OS.chdir(path)
+ OS.environ.setdefault(
+
+
+
+
+
+
+
+
